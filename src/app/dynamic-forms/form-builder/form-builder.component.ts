@@ -20,6 +20,11 @@ export class FormBuilderComponent implements OnInit {
     for (let item of this.formData) {
       switch(item.type) {        
       case 'text':
+      case 'email':
+      case 'password':
+      case 'checkbox':
+      case 'select':
+      case 'radio':
         fieldsCtrls[item.name] = this.fb.control({ 
           value: item.value ||'',
           disabled: item.disabled ? true:false

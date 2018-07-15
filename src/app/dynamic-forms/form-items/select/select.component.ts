@@ -2,11 +2,11 @@ import { Component, OnInit, Input } from '@angular/core';
 import { FormGroup } from '@angular/forms';
 
 @Component({
-  selector: 'app-render-form',
-  templateUrl: './render-form.component.html',
-  styleUrls: ['./render-form.component.scss']
+  selector: 'app-select',
+  templateUrl: './select.component.html',
+  styleUrls: ['./select.component.scss']
 })
-export class RenderFormComponent implements OnInit {
+export class SelectComponent implements OnInit {
 
   @Input() item: any;
   @Input() form: FormGroup;

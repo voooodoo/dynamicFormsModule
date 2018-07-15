@@ -1,3 +1,18 @@
-<p>
-  render-form works!
-</p>
+<ng-container [ngSwitch]="item.type">
+
+  <app-input-text *ngSwitchCase="'text'" [item]="item" [form]="form"></app-input-text>
+
+  <app-input-email *ngSwitchCase="'email'" [item]="item" [form]="form"></app-input-email>
+
+  <app-input-email *ngSwitchCase="'password'" [item]="item" [form]="form"></app-input-email>
+
+  <app-checkbox *ngSwitchCase="'checkbox'" [item]="item" [form]="form"></app-checkbox>
+
+  <app-select *ngSwitchCase="'select'" [item]="item" [form]="form"></app-select>
+
+  <app-radio *ngSwitchCase="'radio'" [item]="item" [form]="form"></app-radio>
+
+  <app-button *ngSwitchCase="'button'" [item]="item" [form]="form"></app-button>
+
+
+</ng-container>

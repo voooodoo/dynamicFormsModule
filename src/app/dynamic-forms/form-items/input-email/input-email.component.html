@@ -1,0 +1,11 @@
+<div class="form-group" [formGroup]="form">
+    <label for="{{item.id}}">{{item.label}}</label>
+    <input 
+      type="email" 
+      class="form-control {{item.class}}" 
+      formControlName="{{item.name}}" 
+      id="{{item.id}}"
+      placeholder="{{item.placeholder}}"
+    >
+    <small class="form-text text-muted">{{item.subtitle}}</small>
+  </div>

@@ -1,0 +1,8 @@
+<div class="form-group" [formGroup]=form>
+    <button 
+      type="item.typeBtn"
+      class="btn {{item.class}}"
+      [disabled]="item.disabledIvalid ? !form.valid : false">
+      {{item.value}}
+    </button>
+  </div>

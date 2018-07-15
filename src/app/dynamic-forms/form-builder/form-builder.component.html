@@ -1,15 +1,6 @@
 <form (ngSubmit)="onSubmit()" [formGroup]="form">
    
   <div *ngFor="let item of formData">
-      <app-render-form></app-render-form>
-  </div>
-
-  <div class="form-group">
-    <button 
-      type="submit"
-      class="btn btn-success"
-      [disabled]="!form.valid">
-      send
-    </button>
+    <app-render-form [item]="item" [form]="form"></app-render-form>
   </div>
 </form>
