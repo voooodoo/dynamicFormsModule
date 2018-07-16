@@ -17,7 +17,17 @@ import { ButtonComponent } from './form-items/button/button.component';
     ReactiveFormsModule,
     FormsModule
   ],
-  declarations: [FormBuilderComponent, RenderFormComponent, InputTextComponent, InputEmailComponent, InputPasswordComponent, CheckboxComponent, SelectComponent, RadioComponent, ButtonComponent],
+  declarations: [
+    FormBuilderComponent, 
+    RenderFormComponent, 
+    InputTextComponent, 
+    InputEmailComponent, 
+    InputPasswordComponent, 
+    CheckboxComponent, 
+    SelectComponent, 
+    RadioComponent, 
+    ButtonComponent
+  ],
   exports: [FormBuilderComponent]
 })
 export class DynamicFormsModule { }

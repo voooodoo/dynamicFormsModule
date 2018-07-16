@@ -1,3 +1,16 @@
 <div class="wrapper">
-  <app-form></app-form>  
+   
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link" routerLink="" routerLinkActive="active"
+      [routerLinkActiveOptions]="{exact:true}">Home</a>
+    </li>
+    <li class="nav-item" >
+      <a class="nav-link" routerLink="/about" routerLinkActive="active">About</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/signUp" routerLinkActive="active">Sign Up</a>
+    </li>
+  </ul> 
+  <router-outlet></router-outlet>
 </div>
