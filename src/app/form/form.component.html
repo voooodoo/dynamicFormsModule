@@ -1,1 +1,7 @@
-<app-form-builder [formData]="form1"></app-form-builder>
+
+
+<button type="button" class="btn btn-primary" (click)="onClick()">
+    http
+</button>
+
+<app-form-builder *ngIf="formJSON" [formData]="formJSON"></app-form-builder>

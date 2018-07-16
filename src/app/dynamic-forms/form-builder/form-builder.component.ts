@@ -4,7 +4,8 @@ import { FormGroup, FormBuilder } from '@angular/forms';
 @Component({
   selector: 'app-form-builder',
   templateUrl: './form-builder.component.html',
-  styleUrls: ['./form-builder.component.scss']
+  styleUrls: ['./form-builder.component.scss'],
+  
 })
 export class FormBuilderComponent implements OnInit {
 
@@ -14,7 +15,6 @@ export class FormBuilderComponent implements OnInit {
   constructor(private fb:FormBuilder) { }
 
   ngOnInit() {
-    console.log(this.formData);
     let fieldsCtrls = {};
     
     for (let item of this.formData) {
