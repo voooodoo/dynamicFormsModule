@@ -33,6 +33,7 @@ export class FormBuilderComponent implements OnInit {
       
       this.form = this.fb.group( fieldsCtrls );
     }
+    console.log(fieldsCtrls);
   }
 
   onSubmit() {
